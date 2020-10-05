@@ -1,0 +1,7 @@
+{
+    "workbench.colorTheme": "Solarized Light",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
+    "editor.wordWrap": "on",
+    "files.eol": "\n"
+}
