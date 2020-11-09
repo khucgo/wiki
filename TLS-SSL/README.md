@@ -11,3 +11,9 @@ References:
 Tools:
 * Keystore Explorer [https://keystore-explorer.org/](https://keystore-explorer.org/)
 * Portecle [http://portecle.sourceforge.net/](http://portecle.sourceforge.net/)
+
+Commands:
+* openssl to pkcs12 format:
+```shel
+openssl pkcs12 -export -out <FQDN>.p12 -inkey <FQDN>.key -in <FQDN>.crt -name "<FQDN>"
+```
