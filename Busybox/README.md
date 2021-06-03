@@ -3,11 +3,11 @@ BusyBox is copyrighted by many authors between 1998-2015.
 Licensed under GPLv2. See source distribution for detailed
 copyright notices.
 
-Usage: busybox [function [arguments]...]
-   or: busybox --list[-full]
-   or: busybox --show SCRIPT
-   or: busybox --install [-s] [DIR]
-   or: function [arguments]...
+        Usage: `busybox [function [arguments]...]`   
+        or: `busybox --list[-full]`
+        or: `busybox --show SCRIPT`
+        or: `busybox --install [-s] [DIR]`
+        or: `function [arguments]...`
 
         BusyBox is a multi-call binary that combines many common Unix
         utilities into a single executable.  Most people will create a
@@ -15,6 +15,7 @@ Usage: busybox [function [arguments]...]
         will act like whatever it was invoked as.
 
 Currently defined functions:
+```sh
 [
 [[
 acpid
@@ -411,3 +412,4 @@ xzcat
 yes
 zcat
 zcip
+```
