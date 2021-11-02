@@ -48,7 +48,6 @@ aws configure set "profile.$profile_tmp.aws_access_key_id" $main_access_key_id
 aws configure set "profile.$profile_tmp.aws_secret_access_key" $main_secret_access_key
 aws configure set "profile.$profile_tmp.region" $region
 aws configure set "profile.$profile_tmp.output" $output
-[Environment]::SetEnvironmentVariable('AWS_PROFILE', $profile_tmp, 'User')
 echo "Temporary profile ``$profile_tmp`` has been set."
 
 # Get session token
@@ -71,6 +70,7 @@ aws configure set "profile.$profile_mfa.region" $region
 aws configure set "profile.$profile_mfa.output" $output
 
 [Environment]::SetEnvironmentVariable('AWS_PROFILE', $profile_mfa, 'User')
+$Env:AWS_PROFILE = $profile_mfa
 
 # cleanup
 aws configure set "profile.$profile_tmp.aws_access_key_id" "null"
