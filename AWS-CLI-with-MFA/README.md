@@ -9,10 +9,13 @@ Created MFA profile then is set to `AWS_PROFILE` environment variable for conven
 
 ### Run
 ```powershell
-.\aws-cli-mfa-profile.ps1
+.\aws-cli-mfa-profile.ps1 [-ttl <number>]
 ```
 
-##### Inputs
+##### Parameters:
+- ttl: [Optional] Time to live (hours). Default is 1 hour.
+
+##### Inputs:
 1. Access key ID: Your (main) AWS access key ID.
 2. Secret access key: Your (main) AWS secret access key.
 3. Region: AWS region for MFA profile.
@@ -20,3 +23,6 @@ Created MFA profile then is set to `AWS_PROFILE` environment variable for conven
 5. MFA profile name: Name for the MFA profile.
 6. MFA ARN: Your MFA virtual/hardware device ARN.
 7. MFA token: Token from your MFA virtual/hardware device.
+
+### References:
+- https://aws.amazon.com/premiumsupport/knowledge-center/authenticate-mfa-cli/
