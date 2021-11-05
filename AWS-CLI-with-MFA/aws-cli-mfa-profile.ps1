@@ -12,7 +12,7 @@ param (
     [string]$mfa_token = $(Read-Host "MFA token")
 )
 
-if (!"$main_access_key_id" || !"$main_secret_access_key" || !"$region" || !"$mfa_arn" || !"$mfa_token") {
+if (!"$main_access_key_id" -Or !"$main_secret_access_key" -Or !"$region" -Or !"$mfa_arn" -Or !"$mfa_token") {
     echo "Missing inputs! Exiting..."
     exit
 }
